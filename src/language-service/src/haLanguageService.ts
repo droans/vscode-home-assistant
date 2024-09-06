@@ -12,7 +12,7 @@ import {
   TextDocument,
   TextDocumentChangeEvent,
   TextEdit,
-// } from "vscode-languageserver-protocol";
+  // } from "vscode-languageserver-protocol";
 } from "yaml-language-server";
 import { getLineOffsets } from "yaml-language-server/out/server/src/languageservice/utils/arrUtils";
 import {
