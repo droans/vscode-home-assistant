@@ -277,6 +277,12 @@ interface SensorItem extends BaseItem {
    * https://www.home-assistant.io/integrations/template#state
    */
   unit_of_measurement?: string;
+
+  /**
+   * Defines when the sensor was last reset.
+   * https://www.home-assistant.io/integrations/template#state
+   */
+  last_reset?: Template;
 }
 
 export interface AlarmControlPanelPlatformSchema extends PlatformSchema {
