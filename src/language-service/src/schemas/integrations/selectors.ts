@@ -28,6 +28,7 @@ export type Selector =
   | DurationSelector
   | EntitySelector
   | IconSelector
+  | LabelSelector
   | LocationSelector
   | MediaSelector
   | NumberSelector
@@ -343,6 +344,15 @@ export interface IconSelector {
   } | null;
 }
 
+export interface LabelSelector {
+  /**
+   * The label selector shows a label picker that allows the user to select a label.
+   * https://www.home-assistant.io/docs/blueprint/selectors/#label-selector
+   */
+  label: {
+    multiple?: boolean;
+  } | null;
+}
 export interface LocationSelector {
   /**
    * The icon selector shows an icon picker that allows the user to select an icon.
