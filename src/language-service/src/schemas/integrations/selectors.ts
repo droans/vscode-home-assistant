@@ -20,6 +20,7 @@ export type Selector =
   | ColorRGBSelector
   | ColorTempSelector
   | ConditionSelector
+  | ConversationAgentSelector
   | ConfigEntrySelector
   | DateSelector
   | DateTimeSelector
@@ -149,6 +150,16 @@ export interface ConfigEntrySelector {
      * https://www.home-assistant.io/docs/blueprint/selectors/#config-entry-selector
      */
     integration?: Domain;
+  } | null;
+}
+
+export interface ConversationAgentSelector {
+  /**
+   * The conversation agent selector allows the user to select an agent.
+   * https://www.home-assistant.io/docs/blueprint/selectors/#conversation-agent-selector
+   */
+  conversation_agent: {
+    language?: string;
   } | null;
 }
 
