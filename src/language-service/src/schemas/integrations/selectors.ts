@@ -512,7 +512,11 @@ export interface TextSelector {
      * https://www.home-assistant.io/docs/blueprint/selectors/#text-selector
      */
     multiline?: boolean;
-
+    /**
+     * Set to true to allow multiple text fields
+     * https://www.home-assistant.io/docs/blueprint/selectors/#text-selector
+     */
+    multiple?: boolean;
     /**
      * Allows adding a prefix to the input field.
      * https://www.home-assistant.io/docs/blueprint/selectors/#text-selector
