@@ -261,7 +261,7 @@ export interface RepeatAction {
   /**
    * Alias for the repeat action.
    */
-  alias?: string;
+  alias?: string; 
 
   /**
    * Every individual action can be disabled, without removing it.
