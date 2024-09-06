@@ -365,6 +365,11 @@ export interface ServiceAction {
    * The most important action is the action to call a service.
    * https://www.home-assistant.io/docs/scripts/service-calls/
    */
+  action?: string;
+  /**
+   * DEPRECATED as of Home Assistant 2024.08, replaced with action.
+   * https://www.home-assistant.io/docs/scripts/service-calls/#use-templates-to-decide-which-service-to-call
+   */
   service?: string;
 
   /**
