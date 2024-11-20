@@ -8,7 +8,7 @@ import {
 import { IHaConnection } from "../home-assistant/haConnection";
 
 export class ServicesCompletionContribution implements JSONWorkerContribution {
-  public static propertyMatches: string[] = ["service"];
+  public static propertyMatches: string[] = ["service", "action"];
 
   constructor(private haConnection: IHaConnection) {}
 
